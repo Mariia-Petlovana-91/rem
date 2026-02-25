@@ -1,19 +1,13 @@
+@config "../../tailwind.config.ts";
 @import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
-  /* LIGHT THEME */
   :root {
     --bg: #f1f1f1;
     --text: #010101;
-
     --font-mono: 'Roboto Mono', monospace;
   }
 
-  /* DARK THEME */
   .dark {
     --bg: #010101;
     --text: #f1f1f1;
@@ -31,5 +25,27 @@
 
   body {
     @apply font-mono text-base;
+  }
+}
+
+@layer components {
+  .icon-btn {
+    @apply p-2
+     cursor-pointer
+      focus-visible:outline-none
+      focus-visible:ring-2
+      focus-visible:ring-secondary-cyan
+      focus-visible:ring-offset-2;
+  }
+
+  .icon {
+    @apply text-primary-yellow
+      text-base
+      md:text-2xl
+      lg:text-[32px]
+      transition-colors
+      duration-300
+      group-hover:text-secondary-cyan
+      group-focus-visible:text-secondary-cyan;
   }
 }

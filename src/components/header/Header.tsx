@@ -1,18 +1,28 @@
-import { IoMenu } from 'react-icons/io5';
-import { MdLanguage } from 'react-icons/md';
-
 import logo from '../../img/logo 1.svg';
+import Language from './Language';
+import Theme from './Theme';
+import Auth from './Auth/Auth';
+import MobileMenu from './mobileMenu/MobileMenu';
 
 const Header = () => {
   return (
-    <div>
-      <img src={logo} alt="logo" />
-      <IoMenu />
-      <MdLanguage />
-      <p className="text-base font-bold tracking-tighter">
-        sdfrijgirjvir
-      </p>
-    </div>
+    <header className="border-b border-primary-yellow flex items-center justify-between p-3">
+      <a href="/">
+        {' '}
+        <img
+          src={logo}
+          alt="logo"
+          className="w-28 h-16 md:w-36 md:h-20 lg:w-48 lg:h-28"
+        />
+      </a>
+
+      <div className="flex items-center gap-3">
+        <Language />
+        <Theme />
+        <Auth />
+        <MobileMenu />
+      </div>
+    </header>
   );
 };
 
