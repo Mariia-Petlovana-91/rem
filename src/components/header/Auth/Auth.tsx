@@ -1,8 +1,10 @@
+import AuthBtn from "./AuthBtn";
+
 const Menu = () => {
   return (
     <div className="hidden md:block">
-      <button type="button">Sign in</button>
-      <button type="button">Sign up</button>
+      <AuthBtn variant="yellow">Sign in</AuthBtn>
+      <AuthBtn variant="cyan">Sign up</AuthBtn>
     </div>
   );
 };

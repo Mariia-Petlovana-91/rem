@@ -33,9 +33,6 @@
     @apply p-2
      cursor-pointer
       focus-visible:outline-none
-      focus-visible:ring-2
-      focus-visible:ring-secondary-cyan
-      focus-visible:ring-offset-2;
   }
 
   .icon {
