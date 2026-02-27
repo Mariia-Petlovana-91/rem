@@ -1,4 +1,4 @@
-import logo from '/logo 1.svg';
+import logo from '/logo.svg';
 import Language from './Language';
 import Theme from './Theme';
 import Auth from './Auth/Auth';
