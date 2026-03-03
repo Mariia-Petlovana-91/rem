@@ -1,7 +1,6 @@
 import type { AuthBtnProp } from "../../../ts";
 
-const AuthBtn=({ children, variant = "yellow" }: AuthBtnProp
-)=> {     
+const AuthBtn= ({ variant="yellow", children, ...rest }: AuthBtnProp)=> {     
   const base =  
     "border p-2 mr-2 rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300 focus:outline-none";
 
@@ -13,7 +12,7 @@ const AuthBtn=({ children, variant = "yellow" }: AuthBtnProp
   };
 
   return (
-    <button type="button" className={`${base} ${variants[variant]}`}>
+    <button type="button" className={`${base} ${variants[variant]}`}  {...rest}>
       {children}
     </button>
   );

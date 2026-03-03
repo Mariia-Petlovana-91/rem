@@ -1,10 +1,9 @@
-import sleep from "../../../../img/sleep.png";
+import NotActive from "../../NotActive";
 
-const SignIpForm =()=>{
-        return <div>
-                <p>The page is not active yet</p>
-                <img src={sleep} alt="cat Lulu sleep"/>
-        </div>
+const SignInForm =()=>{
+        return <>
+               <NotActive/>
+        </>
 }
 
-export default SignIpForm;
+export default SignInForm;
