@@ -33,6 +33,13 @@
       type="font/woff2"
       crossorigin
     />
+    <script>
+      const theme = localStorage.getItem('theme');
+
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import popupReducer from './popup/slice';
+import themeReducer from './theme/slice';
 
 export const store = configureStore({
   reducer: {
     popupData: popupReducer,
+    themeData: themeReducer,
   },
 });
 
