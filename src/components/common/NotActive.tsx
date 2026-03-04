@@ -1,10 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import sleep from '../../img/sleep.png';
 
 const NotActive = () => {
+  const { t } = useTranslation();
   return (
     <div className="p-4 max-w-[600px] mx-auto ">
       <p className="text-secondary-cyan text-lg font-bold text-center">
-        This page is not active yet
+        {t('slep')}
       </p>
       <img
         src={sleep}
