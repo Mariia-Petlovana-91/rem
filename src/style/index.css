@@ -6,12 +6,12 @@
     --bg: #f1f1f1;
     --text: #010101;
     --font-mono: 'Roboto Mono', monospace;
-    --bg-btn: #010101;
+    --bg-btn: #121212;
     --text-btn: #f1f1f1;
   }
 
   .dark {
-    --bg: #010101;
+    --bg: #1a1a1a;
     --text: #f1f1f1;
     --bg-btn: #f1f1f1;
     --text-btn: #010101;
