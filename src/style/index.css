@@ -6,11 +6,15 @@
     --bg: #f1f1f1;
     --text: #010101;
     --font-mono: 'Roboto Mono', monospace;
+    --bg-btn: #010101;
+    --text-btn: #f1f1f1;
   }
 
   .dark {
     --bg: #010101;
     --text: #f1f1f1;
+    --bg-btn: #f1f1f1;
+    --text-btn: #010101;
   }
 
   @font-face {
@@ -32,7 +36,7 @@
   .icon-btn {
     @apply p-2
      cursor-pointer
-      focus-visible:outline-none
+      focus-visible:outline-none;
   }
 
   .icon {

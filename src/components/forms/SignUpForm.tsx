@@ -1,9 +1,11 @@
-import NotActive from "../common/NotActive";
+import NotActive from '../common/NotActive';
 
-const SignUpForm =()=>{
-        return <>
-                <NotActive/>
-        </>
-}
+const SignUpForm = () => {
+  return (
+    <>
+      <NotActive />
+    </>
+  );
+};
 
 export default SignUpForm;

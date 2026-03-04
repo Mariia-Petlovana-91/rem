@@ -1,4 +1,4 @@
-import logo from '/logo.svg';
+import logo from '/logo.webp';
 import Language from './Language';
 import Theme from './Theme';
 import Auth from './auth/Auth';
@@ -6,15 +6,14 @@ import MobileMenuBtn from './mobileMenu/MobileMenuBtn';
 
 const Header = () => {
   return (
-    <header className="border-b border-primary-yellow flex items-center justify-between p-3">
-      <a href="/" aria-label='Home'>
-        {' '}
+    <header className=" bg-[var(--bg)]  border-b border-primary-yellow flex items-center justify-between p-3">
+      <a href="/" aria-label="Home">
         <img
           src={logo}
           alt="logo"
-          className="w-28 h-16 md:w-36 md:h-20 lg:w-48 lg:h-28"
-           width={192}
-          height={112}
+          className="w-28 md:w-36 lg:w-48 h-auto"
+          width={300}
+          height={200}
           loading="eager"
           fetchPriority="high"
           decoding="async"
