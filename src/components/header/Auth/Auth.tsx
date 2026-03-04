@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { openPopup } from "../../../redux/popup/slice";
 import AuthBtn from "./AuthBtn";
 
-const Menu = () => {
+const Auth  = () => {
   
 const dispatch = useDispatch();
 
@@ -14,4 +14,4 @@ const dispatch = useDispatch();
   );
 };
 
-export default Menu;
+export default Auth;
