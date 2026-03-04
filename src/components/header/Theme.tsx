@@ -23,7 +23,7 @@ const Theme = () => {
       <button
         type="button"
         className="icon-btn  group"
-        aria-label="Switch to light theme"
+        aria-label="Toggle theme"
         onClick={handleToggle}
       >
         {theme === 'light' ? (
