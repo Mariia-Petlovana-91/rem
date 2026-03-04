@@ -1,15 +1,15 @@
-import { IoMenu } from 'react-icons/io5';
+import {useDispatch } from "react-redux";
 
-const MobileMenu = () => {
-  return (
-    <button
-      type="button"
-      className="icon-btn group block md:hidden"
-      aria-label="Open mobile menu"
-    >
-      <IoMenu className="icon" />
-    </button>
-  );
-};
+import AuthBtn from "../auth/AuthBtn";
+import { openPopup } from "../../../redux/popup/slice";
+
+const MobileMenu = () =>{
+const dispatch = useDispatch();
+
+        return <div className="w-full h-[400px] z-51 block md:hidden">
+           <AuthBtn variant="yellow"  onClick={() => dispatch(openPopup("LOGIN"))}>Sign in</AuthBtn>
+           <AuthBtn variant="cyan"  onClick={() => dispatch(openPopup("SIGNUP"))}>Sign up</AuthBtn>
+        </div>
+}
 
 export default MobileMenu;

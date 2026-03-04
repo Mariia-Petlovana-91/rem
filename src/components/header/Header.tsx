@@ -1,8 +1,8 @@
 import logo from '/logo.svg';
 import Language from './Language';
 import Theme from './Theme';
-import Auth from './Auth/Auth';
-import MobileMenu from './mobileMenu/MobileMenu';
+import Auth from './auth/Auth';
+import MobileMenuBtn from './mobileMenu/MobileMenuBtn';
 
 const Header = () => {
   return (
@@ -25,7 +25,7 @@ const Header = () => {
         <Language />
         <Theme />
         <Auth />
-        <MobileMenu />
+        <MobileMenuBtn />
       </div>
     </header>
   );

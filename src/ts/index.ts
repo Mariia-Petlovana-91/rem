@@ -5,11 +5,11 @@ export interface AuthBtnProp
   variant?: Variant;
 }
 
+export interface PopupState {
+  modalStack: ModalType[];
+}
+
 export type ModalType =
   | "LOGIN"
   | "SIGNUP"
-
-export interface PopupState {
-  isOpen: boolean;
-  modalType: ModalType | null ;
-}
+  | "MOBILE_MENU"

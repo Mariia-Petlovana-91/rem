@@ -2,9 +2,8 @@ import  {createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction} from "@reduxjs/toolkit";
 import type { PopupState, ModalType } from "../../ts";
 
-const initialState :PopupState ={
-        isOpen :false,
-        modalType:null
+const initialState :PopupState ={  
+        modalStack:[],
 };
 
 const popupSlice= createSlice({
@@ -12,12 +11,12 @@ const popupSlice= createSlice({
         initialState,
         reducers:{
                 openPopup:(state, action:PayloadAction<ModalType>)=>{
-                        state.isOpen =true;
-                        state.modalType=action.payload;
+                      
+                        state.modalStack.push(action.payload);
                 },
                 closePopup:(state)=>{
-                        state.isOpen =false;
-                        state.modalType = null;
+                        
+                        state.modalStack.pop();
                 },
         },
 });

@@ -1,4 +1,4 @@
-import NotActive from "../../NotActive";
+import NotActive from "../common/NotActive";
 
 const SignUpForm =()=>{
         return <>
