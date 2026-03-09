@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RiCloseFill } from 'react-icons/ri';
 
 import { closePopup } from '../../../redux/popup/slice';
-import {
-  selectActiveModal,
-  selectIsOpen,
-} from '../../../redux/popup/selectors';
+import { selectActiveModal, selectIsOpen } from '../../../redux/popup/selectors';
+
+import { useEscape } from '../../../utils/hooks/useEscape';
+import { useScrollLock } from '../../../utils/hooks/useScrollLock';
 
 import SignInForm from '../../forms/SignInFopm';
 import SignUpForm from '../../forms/SignUpForm';
@@ -18,23 +18,8 @@ const Popap = () => {
   const typeModal = useSelector(selectActiveModal);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') dispatch(closePopup());
-    };
-
-    if (isOpen) {
-      document.body.classList.add('no-scroll');
-      window.addEventListener('keydown', handleEsc);
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-
-    return () => {
-      document.body.classList.remove('no-scroll');
-      window.removeEventListener('keydown', handleEsc);
-    };
-  }, [isOpen, dispatch]);
+  useEscape(() => dispatch(closePopup(), isOpen));
+  useScrollLock(isOpen);
 
   useEffect(() => {
     const media = window.matchMedia('(min-width: 768px)');

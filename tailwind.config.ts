@@ -8,6 +8,10 @@ const config: Config = {
       colors: {
         bg: 'var(--bg)',
         text: 'var(--text)',
+        'bg-btn': 'var(--bg-btn)',
+        'text-btn': 'var(--text-btn)',
+        'primary-grey': 'var(--primary-grey)',
+        'secondary-grey': 'var(--secondary-grey)',
 
         'primary-yellow': '#cfb703',
         'secondary-yellow': '#ffc900',
@@ -25,6 +29,11 @@ const config: Config = {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
 
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
@@ -34,6 +43,7 @@ const config: Config = {
       animation: {
         slideInLeft: 'slideInLeft 0.3s ease-out',
         slideUp: 'slideUp 0.25s ease-out',
+        slideDown: 'slideDown 0.25s ease-out',
         fadeIn: 'fadeIn 0.2s ease-out',
       },
       fontFamily: {

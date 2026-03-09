@@ -1,5 +1,5 @@
-import logo from '/logo.webp';
-import Language from './Language';
+import logo from '/logo.png';
+import Language from './language/Language';
 import Theme from './Theme';
 import Auth from './auth/Auth';
 import MobileMenuBtn from './mobileMenu/MobileMenuBtn';
@@ -7,7 +7,7 @@ import MobileMenuBtn from './mobileMenu/MobileMenuBtn';
 const Header = () => {
   return (
     <header className=" bg-[var(--bg)]  border-b border-primary-yellow flex items-center justify-between p-3">
-      <a href="/" aria-label="Home">
+      <a href="/" aria-label="Home" className="outline-none">
         <img
           src={logo}
           alt="logo"
