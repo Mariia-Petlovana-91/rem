@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { RiCloseFill } from 'react-icons/ri';
 
-import { closePopup } from '@redux/popup/slice';
-import { selectActiveModal, selectIsOpen } from '@redux/popup/selectors';
+import { closePopup } from '@/redux/popup/slice';
+import { selectActiveModal, selectIsOpen } from '@/redux/popup/selectors';
 
-import { useEscape } from '@hooks/useEscape';
-import { useScrollLock } from '@hooks/useScrollLock';
+import { useEscape } from '@/hooks/useEscape';
+import { useScrollLock } from '@/hooks/useScrollLock';
 
-import { SignInForm, SignUpForm } from '../forms';
+import { SignInForm, SignUpForm } from '@/components/forms';
 
-import MobileMenu from '../header/mobileMenu/MobileMenu';
+import { MobileMenu } from '@/components/loyout';
 
 const Popap = () => {
   const isOpen = useSelector(selectIsOpen);

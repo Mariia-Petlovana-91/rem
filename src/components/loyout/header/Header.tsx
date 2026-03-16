@@ -1,8 +1,5 @@
 import logo from '/logo.png';
-import Language from './language/Language';
-import Theme from './Theme';
-import Auth from './auth/Auth';
-import MobileMenuBtn from './mobileMenu/MobileMenuBtn';
+import { Language, Theme, Auth, MobileMenuBtn } from '@/components/loyout';
 
 const Header = () => {
   return (

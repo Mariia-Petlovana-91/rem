@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 
-import AuthBtn from '../auth/AuthBtn';
-import { openPopup } from '@redux/popup/slice';
+import { AuthBtn } from '@/components/loyout';
+import { openPopup } from '@/redux/popup/slice';
 
 const MobileMenu = () => {
   const dispatch = useDispatch();

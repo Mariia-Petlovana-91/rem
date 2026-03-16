@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import type { PopupState, ModalType } from '../../ts';
+import type { PopupState, ModalType } from '@/types/popup';
 
 const initialState: PopupState = {
   modalStack: [],

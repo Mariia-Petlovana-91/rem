@@ -1,4 +1,4 @@
-import type { AuthBtnProp } from '../../../ts';
+import type { AuthBtnProp } from '@/types/auth';
 
 const AuthBtn = ({ variant = 'yellow', children, ...rest }: AuthBtnProp) => {
   const base =

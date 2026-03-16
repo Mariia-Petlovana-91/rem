@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { MdLanguage } from 'react-icons/md';
 
 import Dropdown from './Dropdown';
-import { useClickOutside } from '@hooks/useClickOutside';
+import { useClickOutside } from '@/hooks/useClickOutside';
 
 const Language = () => {
   const ref = useRef<HTMLDivElement>(null);

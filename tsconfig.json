@@ -4,13 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components*": ["src/components*"],
-      "@api*": ["src/api*"],
-      "@pages*": ["src/pages*"],
-      "@redux*": ["src/redux*"],
-      "@utils*": ["src/utils*"],
-      "@hooks*": ["src/hooks*"]
+      "@/*": ["src/*"]
     }
   }
 }

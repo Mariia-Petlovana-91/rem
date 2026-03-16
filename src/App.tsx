@@ -1,5 +1,5 @@
 import Popap from '@components/common/Popup';
-import Header from '@components/header/Header';
+import Header from '@/components/loyout/header/Header';
 
 const App = () => {
   return (

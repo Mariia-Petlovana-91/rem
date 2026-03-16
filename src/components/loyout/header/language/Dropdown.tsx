@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 
-import { useEscape } from '@hooks/useEscape';
-import type { DropdownProps } from '../../../ts';
+import { useEscape } from '@/hooks/useEscape';
+import type { DropdownProps } from '@/types/dropdown';
 
 const Dropdown = ({ setOpen }: DropdownProps) => {
   useEscape(() => setOpen(false));

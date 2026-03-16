@@ -1,4 +1,4 @@
-import NotActive from '@pages/NotActive';
+import NotActive from '@/pages/NotActive';
 
 const SignInForm = () => {
   return (

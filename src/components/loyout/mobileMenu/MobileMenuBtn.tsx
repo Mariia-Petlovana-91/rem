@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 
 import { IoMenu } from 'react-icons/io5';
-import { openPopup } from '@redux/popup/slice';
+import { openPopup } from '@/redux/popup/slice';
 
 const MobileMenuBtn = () => {
   const dispatch = useDispatch();
