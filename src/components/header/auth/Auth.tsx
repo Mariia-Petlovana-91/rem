@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { openPopup } from '../../../redux/popup/slice';
+import { openPopup } from '@redux/popup/slice';
 import AuthBtn from './AuthBtn';
 
 const Auth = () => {

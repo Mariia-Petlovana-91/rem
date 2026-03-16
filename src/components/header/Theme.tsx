@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IoMoon } from 'react-icons/io5';
 import { MdSunny } from 'react-icons/md';
 
-import type { RootState } from '../../redux/store';
-import { toggleTheme } from '../../redux/theme/slice';
-import { applyTheme } from '../../utils/applyTheme';
+import type { RootState } from '@redux/store';
+import { toggleTheme } from '@redux/theme/slice';
+import { applyTheme } from '@utils/applyTheme';
 
 const Theme = () => {
   const dispatch = useDispatch();
@@ -20,17 +20,8 @@ const Theme = () => {
 
   return (
     <>
-      <button
-        type="button"
-        className="icon-btn  group"
-        aria-label="Toggle theme"
-        onClick={handleToggle}
-      >
-        {theme === 'light' ? (
-          <IoMoon className="icon" />
-        ) : (
-          <MdSunny className="icon" />
-        )}
+      <button type="button" className="icon-btn  group" aria-label="Toggle theme" onClick={handleToggle}>
+        {theme === 'light' ? <IoMoon className="icon" /> : <MdSunny className="icon" />}
       </button>
     </>
   );
