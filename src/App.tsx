@@ -1,14 +1,10 @@
-import Popap from '@/components/common/Popup';
-import Header from '@/components/loyout/header/Header';
-import { Footer } from './components/loyout/footer';
+import { Popup, Layout } from '@/components/common';
 
 const App = () => {
   return (
     <>
-      <Header />
-      <main>hello</main>
-      <Footer />
-      <Popap />
+      <Layout />
+      <Popup />
     </>
   );
 };
