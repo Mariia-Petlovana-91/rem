@@ -51,9 +51,9 @@ const Popap = () => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black/50 z-50 flex
+      className={`fixed inset-0 bg-black/50 z-50 flex 
        ${isMobileMenu ? 'justify-start items-end' : 'items-center justify-center'}
-       animate-fadeIn`}
+       animate-fadeIn `}
       onClick={() => {
         dispatch(closePopup());
       }}
@@ -62,7 +62,7 @@ const Popap = () => {
         onClick={(e) => e.stopPropagation()}
         className={
           isMobileMenu
-            ? 'bg-[var(--bg)] h-full w-[280px] border border-secondary-cyan p-6 animate-slideInLeft'
+            ? 'bg-[var(--bg)] h-full w-[200px] border border-secondary-cyan p-6 animate-slideInLeft'
             : 'bg-[var(--bg)] p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl animate-slideUp'
         }
       >
