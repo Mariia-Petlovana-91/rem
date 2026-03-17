@@ -14,6 +14,7 @@ i18n
 
     supportedLngs: ['en', 'pl', 'ua'],
     nonExplicitSupportedLngs: true,
+    load: 'languageOnly',
 
     detection: {
       order: ['localStorage', 'navigator'],
