@@ -2,7 +2,7 @@ import type { AuthBtnProp } from '@/types/auth';
 
 const AuthBtn = ({ variant = 'yellow', children, ...rest }: AuthBtnProp) => {
   const base =
-    'bg-[var(--bg-btn)] text-[var(--text-btn)]  border p-[8px] mr-2 rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300 focus:outline-none ';
+    'min-w-[140px] bg-[var(--bg-btn)] text-[var(--text-btn)]  border p-[8px] mr-2 rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300 focus:outline-none ';
 
   const variants = {
     yellow:

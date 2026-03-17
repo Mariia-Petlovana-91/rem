@@ -1,4 +1,10 @@
 {
-  "slep": "Strona jeszcze nie działa,sorry",
-  "welcome": "Witaj u nas na stronie"
+  "buttons": {
+    "signin": "Zaloguj",
+    "signup": "Zarejestruj"
+  },
+
+  "notActiv": {
+    "header": "Strona jeszcze nie działa,sorry..."
+  }
 }
