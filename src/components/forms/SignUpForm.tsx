@@ -1,4 +1,4 @@
-import NotActive from '@/pages/NotActive';
+import NotActive from '@/components/common/NotActive';
 
 const SignUpForm = () => {
   return (
