@@ -6,5 +6,10 @@
 
   "notActiv": {
     "header": "Strona jeszcze nie działa,sorry..."
+  },
+  "anime": {
+    "text1": "Gotuje coś pysznego...",
+    "text2": "Odrobinę magii...",
+    "text3": "Już za chwilę podam!"
   }
 }

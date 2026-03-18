@@ -38,6 +38,14 @@ const config: Config = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        fade: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        pop: {
+          '0%': { opacity: 0, transform: 'scale(0.8)' },
+          '100%': { opacity: 1, transform: 'scale(1)' },
+        },
       },
 
       animation: {
@@ -45,6 +53,8 @@ const config: Config = {
         slideUp: 'slideUp 0.25s ease-out',
         slideDown: 'slideDown 0.25s ease-out',
         fadeIn: 'fadeIn 0.2s ease-out',
+        fade: 'fade 0.5s ease-in-out',
+        pop: 'pop 0.5s ease-in-out',
       },
       fontFamily: {
         mono: ['"Roboto Mono"', 'monospace'],
