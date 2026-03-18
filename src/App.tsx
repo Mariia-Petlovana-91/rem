@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 
 import { Popup, Layout, Loader } from '@/components/common';
 
-const Home = lazy(() => import('@/pages/Home'));
+const Home = lazy(() => import('@/pages/home/Home'));
 const MyCollection = lazy(() => import('@/pages/MyCollection'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 const Profile = lazy(() => import('@/pages/Profile'));
@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="myCollection" element={<MyCollection />} />
+            <Route path="my-collection" element={<MyCollection />} />
 
             <Route path="profile" element={<Profile />} />
           </Route>

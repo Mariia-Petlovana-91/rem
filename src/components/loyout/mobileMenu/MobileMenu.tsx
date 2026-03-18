@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
-import { AuthBtn } from '@/components/loyout';
-import { openPopup } from '@/redux/popup/slice';
+import { AuthBtn, Navigation } from '@/components/loyout';
+import { openPopup, closePopup } from '@/redux/popup/slice';
 
 const MobileMenu = () => {
   const dispatch = useDispatch();
@@ -16,6 +16,7 @@ const MobileMenu = () => {
       <AuthBtn variant="cyan" onClick={() => dispatch(openPopup('SIGNUP'))}>
         {t('buttons.signup')}
       </AuthBtn>
+      <Navigation onNavigate={() => dispatch(closePopup())} />
     </div>
   );
 };

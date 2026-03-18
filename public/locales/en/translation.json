@@ -12,5 +12,10 @@
     "text1": "Cooking something delicious...",
     "text2": "Adding a bit of magic...",
     "text3": "Almost ready to serve!"
+  },
+  "nav": {
+    "home": "Home",
+    "myCollection": "My Collection",
+    "profile": "Profile"
   }
 }

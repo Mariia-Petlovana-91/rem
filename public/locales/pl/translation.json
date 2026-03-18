@@ -11,5 +11,10 @@
     "text1": "Gotuje coś pysznego...",
     "text2": "Odrobinę magii...",
     "text3": "Już za chwilę podam!"
+  },
+  "nav": {
+    "home": "Główna",
+    "myCollection": "Moje przepisy",
+    "profile": "Mój profil"
   }
 }
