@@ -1,5 +1,11 @@
+import { Loader } from '@/components/common';
+
 const Home = () => {
-  return <div className="bg-[var(--bg)]"></div>;
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 };
 
 export default Home;

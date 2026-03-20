@@ -63,7 +63,7 @@ const Popap = () => {
         className={
           isMobileMenu
             ? 'bg-[var(--bg)] h-full w-[200px] border border-secondary-cyan p-6 animate-slideInLeft'
-            : 'bg-[var(--bg)] p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl animate-slideUp'
+            : 'bg-bg p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl animate-slideUp'
         }
       >
         {' '}

@@ -12,11 +12,13 @@ const config: Config = {
         'text-btn': 'var(--text-btn)',
         'primary-grey': 'var(--primary-grey)',
         'secondary-grey': 'var(--secondary-grey)',
+        'dropdown-bg': 'var(--dropdown-bg)',
 
         'primary-yellow': '#cfb703',
         'secondary-yellow': '#ffc900',
         'primary-cyan': '#00e5ff',
         'secondary-cyan': '#34CAFF',
+        white: '#ffffff',
       },
       keyframes: {
         slideInLeft: {

@@ -5,7 +5,7 @@ import { Container } from '@/components/common';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--bg)]">
+    <div className="min-h-screen flex flex-col bg-bg">
       <Header />
       <main className="flex-1">
         <Container>

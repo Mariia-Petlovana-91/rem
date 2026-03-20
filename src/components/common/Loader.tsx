@@ -15,8 +15,8 @@ const Loader = () => {
   const currentText = useChangeIndex(texts);
 
   return (
-    <div className="h-[200px] flex flex-col items-center justify-center gap-3">
-      <p className="text-center text-[var(--text)] transition-all duration-500 animate-fade">{currentText}</p>
+    <div className="h-[200px]">
+      <p className="pb-2 text-center text-text transition-all duration-500 animate-fade">{currentText}</p>
 
       <img
         key={currentImg}
@@ -24,7 +24,7 @@ const Loader = () => {
         alt="Loading"
         width="120"
         height="120"
-        className="transition-all duration-500 opacity-100 scale-100 animate-pop"
+        className="block mx-auto transition-all duration-500 opacity-100 scale-100 animate-pop"
       />
     </div>
   );

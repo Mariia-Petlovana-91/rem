@@ -1,7 +1,8 @@
 {
   "buttons": {
     "signin": "Увійти",
-    "signup": "Реєстрація"
+    "signup": "Реєстрація",
+    "menu": "Меню"
   },
 
   "notActiv": {

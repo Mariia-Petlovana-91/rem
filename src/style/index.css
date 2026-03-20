@@ -9,6 +9,7 @@
     --text-btn: #f6f6f6;
     --primary-grey: #5d5a5a;
     --secondary-grey: #938b8b;
+    --dropdown-bg: #dedede;
 
     --font-mono: 'Roboto Mono', monospace;
   }
@@ -20,6 +21,7 @@
     --text-btn: #010101;
     --primary-grey: #bbb7b7;
     --secondary-grey: #f6f6f6;
+    --dropdown-bg: #121111;
   }
 
   @font-face {
@@ -52,5 +54,17 @@
       duration-300
       group-hover:text-primary-yellow
       group-focus-visible:text-primary-yellow;
+  }
+
+  .dropdown-btn-lang {
+    @apply cursor-pointer outline-none transition-colors duration-300
+         text-text text-xs font-semibold md:text-sm
+         border border-secondary-grey rounded-[5px] p-[5px] bg-dropdown-bg
+         hover:text-primary-yellow hover:border-primary-yellow
+         focus:text-primary-yellow focus:border-primary-yellow;
+  }
+
+  .btn {
+    @apply min-w-[130px] bg-bg-btn text-text-btn font-semibold text-sm border p-[8px] mr-2 rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300 focus:outline-none hover:shadow-md hover:shadow-secondary-cyan hover:border-secondary-cyan focus:shadow-md focus:shadow-secondary-cyan focus:border-secondary-cyan;
   }
 }

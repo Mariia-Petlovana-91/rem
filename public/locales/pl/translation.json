@@ -1,7 +1,8 @@
 {
   "buttons": {
     "signin": "Zaloguj",
-    "signup": "Zarejestruj"
+    "signup": "Zarejestruj",
+    "menu": "Menu"
   },
 
   "notActiv": {
