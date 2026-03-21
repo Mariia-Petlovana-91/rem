@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { motion, AnimatePresence } from 'framer-motion';
+
 import { RiCloseFill } from 'react-icons/ri';
 
 import { closePopup } from '@/redux/popup/slice';
@@ -18,7 +20,7 @@ const Popap = () => {
   const typeModal = useSelector(selectActiveModal);
   const dispatch = useDispatch();
 
-  useEscape(() => dispatch(closePopup(), isOpen));
+  useEscape(() => dispatch(closePopup()));
   useScrollLock(isOpen);
 
   useEffect(() => {
@@ -47,41 +49,47 @@ const Popap = () => {
 
   const isMobileMenu = typeModal === 'MOBILE_MENU';
 
-  if (!typeModal) return null;
-
   return (
-    <div
-      className={`fixed inset-0 bg-black/50 z-50 flex 
-       ${isMobileMenu ? 'justify-start items-end' : 'items-center justify-center'}
-       animate-fadeIn `}
-      onClick={() => {
-        dispatch(closePopup());
-      }}
-    >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        className={
-          isMobileMenu
-            ? 'bg-[var(--bg)] h-full w-[200px] border border-secondary-cyan p-6 animate-slideInLeft'
-            : 'bg-bg p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl animate-slideUp'
-        }
-      >
-        {' '}
-        {!isMobileMenu && (
-          <button
-            aria-label="Close popap"
-            type="button"
-            className="absolute top-2 right-3 cursor-pointer text-secondary-cyan transition-color duration-300 hover:text-primary-yellow focus:text-primary-yellow focus:outline-none"
-            onClick={() => {
-              dispatch(closePopup());
-            }}
+    <AnimatePresence mode="wait">
+      {typeModal && (
+        <motion.div
+          key={typeModal}
+          className={`fixed inset-0 bg-black/50 z-50 flex 
+        ${isMobileMenu ? 'justify-start items-end' : 'items-center justify-center'}
+      `}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => dispatch(closePopup())}
+        >
+          <motion.div
+            onClick={(e) => e.stopPropagation()}
+            initial={isMobileMenu ? { x: -100, opacity: 0 } : { y: 40, opacity: 0, scale: 0.95 }}
+            animate={isMobileMenu ? { x: 0, opacity: 1 } : { y: 0, opacity: 1, scale: 1 }}
+            exit={isMobileMenu ? { x: -100, opacity: 0 } : { y: 40, opacity: 0, scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+            className={
+              isMobileMenu
+                ? 'bg-[var(--bg)] h-full w-[200px] border border-secondary-cyan p-6'
+                : 'bg-bg p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl'
+            }
           >
-            <RiCloseFill size="24px" />
-          </button>
-        )}
-        {ModalComponent && <ModalComponent />}
-      </div>
-    </div>
+            {!isMobileMenu && (
+              <button
+                aria-label="Close popap"
+                type="button"
+                className="absolute top-2 right-3 cursor-pointer text-secondary-cyan transition-colors duration-300 hover:text-primary-yellow focus:text-primary-yellow focus:outline-none"
+                onClick={() => dispatch(closePopup())}
+              >
+                <RiCloseFill size="24px" />
+              </button>
+            )}
+
+            {ModalComponent && <ModalComponent />}
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
