@@ -1,5 +1,5 @@
 import Section from '@/components/common/Section';
-import heloLulu from '@/pages/home/file_000000005a987246a247f74797bca5e8 1 (2).png';
+import heloLulu from '@/pages/home/filesrt.webp';
 
 const Hero = () => {
   return (
