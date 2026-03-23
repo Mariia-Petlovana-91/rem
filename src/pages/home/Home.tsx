@@ -1,9 +1,9 @@
-import { Loader } from '@/components/common';
+import { Hero } from '@/pages/home';
 
 const Home = () => {
   return (
     <div>
-      <Loader />
+      <Hero />
     </div>
   );
 };
