@@ -17,5 +17,18 @@
     "home": "Główna",
     "myCollection": "Moje przepisy",
     "profile": "Mój profil"
+  },
+  "img": {
+    "catbox": "Siemka, dokąd idziesz? Jestem głodna, możemy coś ugotować?",
+    "catfish": "Uwielbiam ryby! Ryby są świetne! Ugotujmy coś z rybą!",
+    "catkoc": "No i co? Zamierzasz znowu to zepsuć? Zjedzmy chleb i napijmy się wody, i Ty odpoczniesz.",
+    "catkoc2": "Odpoczęłaś? Bo odpoczęłam. No i co, chodźmy coś przekąsić?",
+    "catlove": "Pa, jakie mam serduszko. To dla Ciebie.",
+    "catlustro": " Przytyłam trochę, ale niewiele, prawda?",
+    "catmetelek": "Wiesz, że brokuły są takie zdrowe? Wow, nawet motyle je jedzą.",
+    "catpapirowatorba": "O, słuchaj, masz też torbę pełną toreb? Podzielisz się?",
+    "catplay": "O, zostawmy gotowanie w spokoju. Chodźmy się pobawić.",
+    "catplay2": "No i co? Zamierzasz się pobawić?",
+    "catsit": "Powiedz, co tam u Ciebie? Ja już się pobawiłam."
   }
 }
