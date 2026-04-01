@@ -10,9 +10,10 @@
   },
 
   "anime": {
-    "text1": "Cooking something delicious...",
+    "text1": "This page is not active yet.",
     "text2": "Adding a bit of magic...",
-    "text3": "Almost ready to serve!"
+    "text3": "Almost ready to serve!",
+    "text4": "Almost ready to serve!"
   },
   "nav": {
     "home": "Home",
