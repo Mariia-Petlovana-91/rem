@@ -1,4 +1,4 @@
-import logo from '/logo.png';
+import logo from '/logo.webp';
 import { Language, Theme, Auth, MobileMenuBtn, DropdownNav } from '@/components/loyout';
 
 const Header = () => {
