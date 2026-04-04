@@ -20,7 +20,7 @@ const Cat = () => {
       <picture>
         <source media="(min-width: 768px)" srcSet={randomItem.desktop} />
         <img
-          className="block mx-auto w-[100px] h-[100px] md:w-[140px] md:h-[140px]"
+          className="block mx-auto w-full max-w-[100px] md:max-w-[240px] h-auto"
           src={randomItem.mobile}
           alt="Cat picture random"
         />
