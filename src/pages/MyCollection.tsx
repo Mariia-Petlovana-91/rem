@@ -1,5 +1,11 @@
+import { Cat } from '@/components';
+
 const MyCollection = () => {
-  return <></>;
+  return (
+    <>
+      <Cat />
+    </>
+  );
 };
 
 export default MyCollection;
