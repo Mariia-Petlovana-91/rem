@@ -1,4 +1,3 @@
-export * from './auth';
 export * from './language';
 
 export { default as Header } from './Header';

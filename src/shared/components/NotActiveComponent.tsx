@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 // import img2 from '@/img/loader/cook2.png';
 // import img3 from '@/img/loader/cook3.png';
 
-const NotActive = () => {
+const NotActiveComponent = () => {
   const { t } = useTranslation();
   return (
     <div className="p-4 max-w-[600px] mx-auto ">
@@ -16,7 +16,7 @@ const NotActive = () => {
   );
 };
 
-export default NotActive;
+export default NotActiveComponent;
 
 // const images = [img1, img2, img3];
 // const { t } = useTranslation();

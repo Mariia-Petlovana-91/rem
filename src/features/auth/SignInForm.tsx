@@ -1,4 +1,4 @@
-import NotActive from '@/components/common/NotActive';
+import NotActive from '@/shared/components/NotActiveComponent';
 
 const SignInForm = () => {
   return (

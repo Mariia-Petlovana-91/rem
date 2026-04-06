@@ -1,5 +1,6 @@
 import logo from '/logo.webp';
-import { Language, Theme, Auth, MobileMenuBtn, DropdownNav } from '@/components/loyout';
+import { Language, Theme, MobileMenuBtn, DropdownNav } from '@/shared/components';
+import { Auth } from '@/features/auth';
 
 const Header = () => {
   return (

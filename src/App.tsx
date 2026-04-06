@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
-import { Popup, Layout, Loader } from '@/components/common';
+import { Popup, Loader } from '@/shared/components';
+import { MainLoyout } from '@/loyouts';
 
 const Home = lazy(() => import('@/pages/home/Home'));
 const MyCollection = lazy(() => import('@/pages/MyCollection'));
@@ -13,7 +14,7 @@ const App = () => {
     <>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<MainLoyout />}>
             <Route index element={<Home />} />
             <Route path="my-collection" element={<MyCollection />} />
 

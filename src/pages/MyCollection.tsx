@@ -1,4 +1,4 @@
-import { Cat } from '@/components';
+import { Cat } from '@/shared';
 
 const MyCollection = () => {
   return (

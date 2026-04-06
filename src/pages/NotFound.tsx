@@ -1,4 +1,4 @@
-import { NotActive } from '@/components/common';
+import { NotActive } from '@/shared/components';
 
 const NotFound = () => {
   return (

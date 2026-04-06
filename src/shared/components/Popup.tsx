@@ -11,9 +11,9 @@ import { selectActiveModal, selectIsOpen } from '@/redux/popup/selectors';
 import { useEscape } from '@/hooks/useEscape';
 import { useScrollLock } from '@/hooks/useScrollLock';
 
-import { SignInForm, SignUpForm } from '@/components/forms';
+import { SignInForm, SignUpForm } from '@/features';
 
-import { MobileMenu } from '@/components/loyout';
+import { MobileMenu } from '@/shared/components';
 
 const Popap = () => {
   const isOpen = useSelector(selectIsOpen);

@@ -1,9 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
-import { AuthBtn, Navigation } from '@/components/loyout';
+import { Navigation } from '@/shared/components';
+import { AuthBtn } from '@/features/auth';
 import { openPopup, closePopup } from '@/redux/popup/slice';
-import { Cat } from '@/components/catBlock';
+import { Cat } from '@/shared/ui/catBlock';
 
 const MobileMenu = () => {
   const dispatch = useDispatch();

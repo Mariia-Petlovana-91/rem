@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 
-import { Header, Footer } from '@/components/loyout';
-import { Container } from '@/components/common';
+import { Header, Footer } from '@/shared/components';
+import { Container } from '@/shared/components';
 
-const Layout = () => {
+const MainLayout = () => {
   return (
     <div className="min-h-screen flex flex-col bg-bg">
       <Header />
@@ -17,4 +17,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default MainLayout;

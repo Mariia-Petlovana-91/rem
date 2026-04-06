@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import Section from '@/components/common/Section';
+import Section from '@/shared/components/Section';
 import luluImgMob from '@/img/heromob.png';
 import luluImgDesk from '@/img/herodesk.png';
 
