@@ -12,7 +12,7 @@ import { useEscape } from '@/hooks/useEscape';
 import { useScrollLock } from '@/hooks/useScrollLock';
 
 import { SignInForm, SignUpForm } from '@/features';
-
+import { StartCookForm } from '@/pages';
 import { MobileMenu } from '@/shared/components';
 
 const Popap = () => {
@@ -43,6 +43,7 @@ const Popap = () => {
     LOGIN: SignInForm,
     SIGNUP: SignUpForm,
     MOBILE_MENU: MobileMenu,
+    START_COOK: StartCookForm,
   };
 
   const ModalComponent = modalMap[typeModal];

@@ -1,9 +1,15 @@
 import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
+
 import luluImgMob from '@/img/heromob.png';
 import luluImgDesk from '@/img/herodesk.png';
 
+import { openPopup } from '@/redux/popup/slice';
+
 const Hero = () => {
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+
   return (
     <div className=" md:flex items-center justify-center">
       <h1 className="sr-only">{t('hero.title')}</h1>
@@ -23,6 +29,9 @@ const Hero = () => {
           className="block mx-auto btn btnYellow w-full max-w-[600px] p-4"
           type="button"
           aria-label="Start cooking"
+          onClick={() => {
+            dispatch(openPopup('START_COOK'));
+          }}
         >
           {t('buttons.startCooking')}
         </button>
