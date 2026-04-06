@@ -5,9 +5,9 @@ import { Popup, Loader } from '@/shared/components';
 import { MainLoyout } from '@/loyouts';
 
 const Home = lazy(() => import('@/pages/home/Home'));
-const MyCollection = lazy(() => import('@/pages/MyCollection'));
-const NotFound = lazy(() => import('@/pages/NotFound'));
-const Profile = lazy(() => import('@/pages/Profile'));
+const MyCollection = lazy(() => import('@/pages/myCollection/MyCollection'));
+const NotFound = lazy(() => import('@/pages/NotFoundPage'));
+const Profile = lazy(() => import('@/pages/profile/Profile'));
 
 const App = () => {
   return (

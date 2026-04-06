@@ -70,8 +70,8 @@ const Popap = () => {
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
             className={
               isMobileMenu
-                ? 'bg-[var(--bg)] h-full w-[200px] border border-secondary-cyan p-6'
-                : 'bg-bg p-8 relative w-[90%] max-w-[600px] border border-secondary-cyan rounded-2xl'
+                ? 'bg-[var(--bg)] h-full w-[200px] border border-primary-yellow p-6'
+                : 'bg-bg p-8 relative w-[90%] max-w-[600px] border border-primary-yellow rounded-2xl'
             }
           >
             {!isMobileMenu && (

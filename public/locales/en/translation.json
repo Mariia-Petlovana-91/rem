@@ -5,15 +5,12 @@
     "menu": "Menu"
   },
 
-  "notActiv": {
-    "header": "This page is not active yet,sorry..."
-  },
+  "notExistPage": "This page does not exist!",
 
   "anime": {
     "text1": "This page is not active yet.",
-    "text2": "Adding a bit of magic...",
-    "text3": "Almost ready to serve!",
-    "text4": "Almost ready to serve!"
+    "text2": "I'm always sleeping here.",
+    "text3": "Good night."
   },
   "nav": {
     "home": "Home",

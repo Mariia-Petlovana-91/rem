@@ -1,4 +1,5 @@
-export { default as NotFound } from './NotFound';
-export { default as MyCollection } from './MyCollection';
-export { default as Profile } from './Profile';
+export { default as NotFound } from './NotFoundPage';
+
+export * from './profile';
 export * from './home';
+export * from './myCollection';

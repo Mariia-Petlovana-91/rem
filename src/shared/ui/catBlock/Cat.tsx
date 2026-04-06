@@ -10,21 +10,18 @@ const getRandomItem = () => {
 const Cat = () => {
   const [randomItem] = useState(getRandomItem);
   const { t } = useTranslation();
-  console.log(randomItem);
 
   return (
     <div className="max-w-64">
-      <p className="text-secondary-cyan text-xs font-bold text-center md:text-base">
+      <p className="text-primary-yellow text-xs font-bold text-center md:text-base">
         {t(randomItem.textKey)}
       </p>
-      <picture>
-        <source media="(min-width: 768px)" srcSet={randomItem.desktop} />
-        <img
-          className="block mx-auto w-full max-w-[100px] md:max-w-[240px] h-auto"
-          src={randomItem.mobile}
-          alt="Cat picture random"
-        />
-      </picture>
+
+      <img
+        className="block mx-auto w-full max-w-[100px] md:max-w-[240px] h-auto"
+        src={randomItem.desktop}
+        alt="Cat picture random"
+      />
     </div>
   );
 };

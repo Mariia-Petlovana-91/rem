@@ -1,9 +1,9 @@
-import NotActive from '@/shared/components/NotActiveComponent';
+import { AnimationNotActive } from '@/shared';
 
 const SignUpForm = () => {
   return (
     <>
-      <NotActive />
+      <AnimationNotActive />
     </>
   );
 };

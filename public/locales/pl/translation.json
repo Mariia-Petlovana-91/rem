@@ -6,12 +6,12 @@
   },
 
   "notActiv": {
-    "header": "Strona jeszcze nie działa,sorry..."
+    "header": "Ta strona nie istnieje!"
   },
   "anime": {
-    "text1": "Gotuje coś pysznego...",
-    "text2": "Odrobinę magii...",
-    "text3": "Już za chwilę podam!"
+    "text1": "Ta strona jeszcze nie działa.",
+    "text2": "Zawsze tu śpię.",
+    "text3": "Dobrej nocy!"
   },
   "nav": {
     "home": "Główna",
