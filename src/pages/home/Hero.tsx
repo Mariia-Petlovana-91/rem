@@ -19,7 +19,11 @@ const Hero = () => {
       </picture>
       <div className="max-w-[600px] mx-auto md:mx-0">
         <p className="text-text text-center text-xs md:text-sm lg:text-base mb-4">{t('hero.message')}</p>
-        <button className="block mx-auto btn btnYellow w-full max-w-[600px] p-4" type="button">
+        <button
+          className="block mx-auto btn btnYellow w-full max-w-[600px] p-4"
+          type="button"
+          aria-label="Start cooking"
+        >
           {t('buttons.startCooking')}
         </button>
       </div>

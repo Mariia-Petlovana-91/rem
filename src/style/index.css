@@ -41,19 +41,19 @@
 
 @layer components {
   .icon-btn {
-    @apply p-2
-     cursor-pointer
-      focus-visible:outline-none;
+    @apply inline-flex items-center justify-center w-10 h-10
+    cursor-pointer
+    focus-visible:outline-none;
   }
 
   .icon {
     @apply text-[var(--primary-grey)]
-      text-xl
-      md:text-2xl
-      transition-colors
-      duration-300
-      group-hover:text-primary-yellow
-      group-focus-visible:text-primary-yellow;
+    text-xl
+    md:text-2xl
+    transition-colors
+    duration-300
+    group-hover:text-primary-yellow
+    group-focus-visible:text-primary-yellow;
   }
 
   .dropdown-btn-lang {
@@ -73,5 +73,11 @@
 
   .btnYellow {
     @apply hover:shadow-md hover:shadow-primary-yellow hover:border-primary-yellow focus:shadow-md focus:border-primary-yellow focus:shadow-primary-yellow;
+  }
+
+  .link {
+    @apply text-text text-xs md:text-sm lg:text-base cursor-pointer
+     transition-colors duration-300
+     hover:text-primary-cyan focus:text-primary-cyan;
   }
 }

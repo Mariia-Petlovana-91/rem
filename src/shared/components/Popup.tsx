@@ -78,7 +78,7 @@ const Popap = () => {
               <button
                 aria-label="Close popap"
                 type="button"
-                className="absolute top-2 right-3 cursor-pointer text-secondary-cyan transition-colors duration-300 hover:text-primary-yellow focus:text-primary-yellow focus:outline-none"
+                className="absolute top-2 right-3 cursor-pointer text-primary-yellow transition-colors duration-300 hover:text-secondary-cyan focus:text-secondary-cyan focus:outline-none"
                 onClick={() => dispatch(closePopup())}
               >
                 <RiCloseFill size="24px" />
