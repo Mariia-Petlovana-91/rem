@@ -1,8 +1,13 @@
 {
+  "hero": {
+    "title": "Cook deliciously and easily with Ai Lulu!",
+    "message": "Hello! I am Ai Lulu, your personal cooking assistant.We can cook anything you want.Tell me what you have and I make you several recipes, and you take one you like.I van calculate the budget for additional ingredients and the number of peoiple,or offer my recipe.I can also help you with your collection of recipes, and you can share it with your friends! I am here to make cooking easier and more enjoyable for you. Let's cook together!"
+  },
   "buttons": {
     "signin": "Sign in",
     "signup": "Sign up",
-    "menu": "Menu"
+    "menu": "Menu",
+    "startCooking": "Start cooking"
   },
 
   "notExistPage": "This page does not exist!",

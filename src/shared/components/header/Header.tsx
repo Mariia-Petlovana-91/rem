@@ -4,24 +4,19 @@ import { Auth } from '@/features/auth';
 
 const Header = () => {
   return (
-    <header className="p-2 md:p-4 lg:p-6 border-b border-primary-yellow flex items-center justify-between">
+    <header className=" border-b border-primary-yellow px-2 md:px-4 lg:px-6 flex items-center justify-between">
       <a href="/" aria-label="Home" className="outline-none">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-28 md:w-36 lg:w-48 h-auto"
-          width={300}
-          height={200}
-          loading="eager"
-          decoding="async"
-        />
+        <img src={logo} alt="logo" className="w-24 md:w-32 h-auto cursor-pointer" />
       </a>
 
       <div className="flex items-center gap-3">
         <DropdownNav />
         <Language />
         <Theme />
-        <Auth />
+        <div className="hidden md:block">
+          <Auth />
+        </div>
+
         <MobileMenuBtn />
       </div>
     </header>

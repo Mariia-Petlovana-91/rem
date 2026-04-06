@@ -1,13 +1,16 @@
 {
+  "hero": {
+    "title": "Gotuj pysznie i łatwo z Ai Lulu!",
+    "message": "Cześć! Jestem Ai Lulu, Twoja osobista asystentka kulinarna. Możemy ugotować wszystko, co chcesz. Powiedz mi, co masz, a ja przygotuję dla Ciebie kilka przepisów, a Ty wybierzesz ten, który Ci się spodoba. Mogę obliczyć budżet na dodatkowe składniki i liczbę osób, lub zaproponować mój przepis. Mogę też pomóc Ci z Twoją kolekcją przepisów, a Ty możesz się nią podzielić ze swoimi przyjaciółmi! Jestem tutaj, aby ułatwić Ci gotowanie i sprawić, że będzie ono bardziej przyjemne. Gotujmy razem!"
+  },
   "buttons": {
     "signin": "Zaloguj",
     "signup": "Zarejestruj",
-    "menu": "Menu"
+    "menu": "Menu",
+    "startCooking": "Zacznij gotować"
   },
 
-  "notActiv": {
-    "header": "Ta strona nie istnieje!"
-  },
+  "notActiv": "Ta strona jeszcze nie działa!",
   "anime": {
     "text1": "Ta strona jeszcze nie działa.",
     "text2": "Zawsze tu śpię.",

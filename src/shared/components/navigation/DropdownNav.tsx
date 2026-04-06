@@ -20,7 +20,7 @@ const DropdownNav = () => {
     <div ref={ref} className="relative">
       <button
         type="button"
-        className="btn"
+        className="btn btnCyan"
         aria-label="Open navigation menu"
         aria-expanded={open}
         aria-controls="nav-menu"

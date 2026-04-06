@@ -65,6 +65,13 @@
   }
 
   .btn {
-    @apply min-w-[130px] bg-bg-btn text-text-btn font-semibold text-sm border p-[8px] mr-2 rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300 focus:outline-none hover:shadow-md hover:shadow-secondary-cyan hover:border-secondary-cyan focus:shadow-md focus:shadow-secondary-cyan focus:border-secondary-cyan;
+    @apply min-w-[130px] bg-bg-btn text-text-btn font-semibold text-sm border p-[8px] rounded-tl-3xl rounded-br-3xl cursor-pointer transition-all duration-300;
+  }
+  .btnCyan {
+    @apply focus:outline-none hover:shadow-md hover:shadow-secondary-cyan hover:border-secondary-cyan focus:shadow-md focus:shadow-secondary-cyan focus:border-secondary-cyan;
+  }
+
+  .btnYellow {
+    @apply hover:shadow-md hover:shadow-primary-yellow hover:border-primary-yellow focus:shadow-md focus:border-primary-yellow focus:shadow-primary-yellow;
   }
 }
